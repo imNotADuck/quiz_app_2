@@ -46,9 +46,11 @@ class ResultScreen extends StatelessWidget {
         const SizedBox(
           height: 30,
         ),
-        TextButton(
+        ElevatedButton.icon(
           onPressed: resetQuizCallback,
-          child: const Text('Try again'),
+          icon: const Icon(Icons.restart_alt_rounded, size: 24),
+          style: ElevatedButton.styleFrom(foregroundColor: Colors.white, backgroundColor: Colors.red),
+          label: const Text('Try again'),
         ),
       ]),
     );
